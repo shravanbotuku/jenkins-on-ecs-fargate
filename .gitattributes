@@ -1,0 +1,9 @@
+# Normalise line endings (the repo is edited from Windows and WSL).
+* text=auto eol=lf
+
+*.sh       text eol=lf
+*.tf       text eol=lf
+*.tftpl    text eol=lf
+*.groovy   text eol=lf
+*.png      binary
+*.jpg      binary
