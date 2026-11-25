@@ -1,0 +1,61 @@
+# --- Terraform ---
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+tfplan
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# Variable files hold environment-specific values; only examples are committed.
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+
+# Real backend configs stay local; commit backend.tf.example instead.
+backend.tf
+backend.hcl
+!backend.tf.example
+
+# NOTE: .terraform.lock.hcl is intentionally NOT ignored.
+# Committing it pins provider versions and hashes (supply-chain control).
+
+# --- Secrets and credentials ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+credentials
+.aws/
+
+# Private notes must never land in this public repo.
+docs/private/
+*.private.md
+
+# --- Python (rbac guard tests) ---
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# --- Editors / OS ---
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# --- Tool caches ---
+.claude/
