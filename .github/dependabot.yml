@@ -1,0 +1,16 @@
+# Dependabot keeps pinned dependencies current.
+# Terraform providers and Dockerfile base images get their own entries
+# in the pull requests that add those directories.
+version: 2
+updates:
+  # GitHub Actions are pinned to commit SHAs; Dependabot bumps the SHA
+  # and the version comment together.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      github-actions:
+        patterns: ["*"]
+    commit-message:
+      prefix: ci
