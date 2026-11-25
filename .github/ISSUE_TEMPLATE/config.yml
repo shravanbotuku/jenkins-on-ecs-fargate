@@ -1,0 +1,6 @@
+# Route security reports away from public issues.
+blank_issues_enabled: true
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/shravanbotuku/jenkins-on-ecs-fargate/security/advisories/new
+    about: Please report security issues privately, not as a public issue.

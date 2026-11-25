@@ -1,0 +1,7 @@
+# Every path is owned by the maintainer.
+# Kept explicit so ownership is clear if collaborators join later.
+*                   @shravanbotuku
+
+# Changes to CI, repo policy or access control deserve extra care.
+/.github/           @shravanbotuku
+/SECURITY.md        @shravanbotuku
